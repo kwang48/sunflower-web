@@ -1,0 +1,158 @@
+body {
+  background-image: url("http://more-sky.com/data/out/6/IMG_105570.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #080808;
+  overflow: hidden;
+  margin: 0;
+}
+html{
+  margin:0;
+}
+
+img{
+  position: absolute;
+  border-radius: 50%;
+}
+.sun{
+  border-radius: 0px;
+  z-index: -7;
+  top:-390px;
+  left:-25px;
+  height: 1600px;
+  animation: rotate 600s linear infinite;
+}
+.one{
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+  animation: rotate 10s linear infinite;
+  margin: auto;
+  top:350px;
+  left:700px;
+}
+.two{
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  animation: rotate 15s ease-in-out reverse infinite;
+  margin: auto;
+  top:300px;
+  left:650px;
+}
+.three{
+  width: 300px;
+  height: 300px;
+  z-index: -2;
+  animation: rotate 7s linear infinite;
+  margin: auto;
+  top:250px;
+  left:600px;
+}
+.four{
+  width: 400px;
+  height: 400px;
+  z-index: -3;
+  animation: rotate 20s linear alternate infinite;
+  margin: auto;
+  top:200px;
+  left:550px;
+}
+.five{
+  width: 500px;
+  height: 500px;
+  z-index: -4;
+  animation: rotate 25s ease-in-out alternate infinite;
+  margin: auto;
+  top:150px;
+  left:500px;
+}
+.six{
+  width: 600px;
+  height: 600px;
+  z-index: -5;
+  animation: rotate 60s linear infinite;
+  margin: auto;
+  top:100px;
+  left:450px;
+}
+.seven{
+  width: 700px;
+  height: 700px;
+  z-index: -6;
+  animation: rotate 55s linear reverse infinite;
+  margin: auto;
+  top:50px;
+  left:400px;
+}
+
+.orbit{
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+  top:350px;
+  left:700px;
+  animation: orbit 20s linear infinite;
+}
+
+.orbit2{
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+  top:350px;
+  left:700px;
+  animation: orbit2 20s linear infinite -13s;
+}
+
+.orbit3{
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+  top:350px;
+  left:700px;
+  animation: orbit3 20s linear infinite -6s;
+}
+
+@keyframes rotate{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes orbit{
+  0%{
+    transform:rotate(0deg) translateX(700px) rotate(0deg) scale(.7,.7) translateZ(0px);
+  }
+  50%{
+    transform:rotate(180deg) translateX(700px) rotate(-720deg) scale(1,1) translateZ(40px);
+  }
+
+  100%{
+    transform:rotate(360deg) translateX(700px) rotate(-1080deg) scale(.7,.7) translateZ(0px);
+  }
+}
+
+@keyframes orbit2{
+  0%{
+    transform:rotate(0deg) translateX(500px) rotate(0deg) scale(.9,.9) translateZ(0px);
+  }
+  50%{
+    transform:rotate(180deg) translateX(500px) rotate(-720deg) scale(1,1) translateZ(20px);
+  }
+  100%{
+    transform:rotate(360deg) translateX(500px) rotate(-1080deg) scale(.9,.9) translateZ(0px);
+  }
+}
+
+
+@keyframes orbit3{
+  0%{
+    transform:rotate(0deg) translateX(600px) rotate(0deg) scale(.8,.8) translateZ(0px);
+  }
+  50%{
+    transform:rotate(180deg) translateX(600px) rotate(-720deg) scale(1,1) translateZ(30px);
+  }
+  100%{
+    transform:rotate(360deg) translateX(600px) rotate(-1080deg) scale(.8,.8) translateZ(0px);
+  }
+}
